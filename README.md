@@ -31,8 +31,9 @@ FROM smartassist/gocd-agent-ruby2.7:v20.10.0
 ## Contents
 
 - [GoCD's official Debian 10 agent's Dockerfile](https://hub.docker.com/r/gocd/gocd-agent-debian-10)
-- [Ruby's official 2.7 Dockerfile](https://github.com/docker-library/ruby/raw/master/2.7/buster/Dockerfile)
+- [Docker's official Ruby 2.7 Dockerfile](https://github.com/docker-library/ruby/raw/master/2.7/buster/Dockerfile)
 - [Buildpack Dependencies](https://github.com/docker-library/buildpack-deps/raw/master/debian/buster/Dockerfile)
+- [Docker's official Node 15 Dockerfile](https://github.com/nodejs/docker-node/raw/master/15/buster/Dockerfile)
 
 ## Versions
 
@@ -41,6 +42,7 @@ FROM smartassist/gocd-agent-ruby2.7:v20.10.0
 | OS      | Debian 10 (Buster)  |
 | GoCD agent | v20.10.0 |
 | Ruby       | 2.7.2  |
+| Node       | 15.5.0  |
 
 ## Building
 
