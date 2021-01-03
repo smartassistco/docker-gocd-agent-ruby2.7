@@ -1,4 +1,4 @@
-# GoCD Agent with Ruby Docker Image
+# GoCD Agent with Ruby 2.7 Docker Image
 
 [![dockeri.co](https://dockeri.co/image/smartassist/gocd-agent-ruby2.7)](https://hub.docker.com/r/smartassist/gocd-agent-ruby2.7)
 
