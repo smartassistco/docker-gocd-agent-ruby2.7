@@ -17,6 +17,32 @@ USER root
 #
 
 
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+		netbase \
+		wget \
+	; \
+	rm -rf /var/lib/apt/lists/*
+
+RUN set -ex; \
+	if ! command -v gpg > /dev/null; then \
+		apt-get update; \
+		apt-get install -y --no-install-recommends \
+			gnupg \
+			dirmngr \
+		; \
+		rm -rf /var/lib/apt/lists/*; \
+	fi
+#
+# NOTE: THIS DOCKERFILE IS GENERATED VIA "apply-templates.sh"
+#
+# PLEASE DO NOT EDIT IT DIRECTLY.
+#
+
+
 # procps is very common in build systems, and is a reasonably small package
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		git \
