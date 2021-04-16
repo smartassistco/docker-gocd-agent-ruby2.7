@@ -1,6 +1,6 @@
 ## DO NOT MODIFY DIRECTLY. GENERATED WITH generate.sh ##
 
-FROM gocd/gocd-agent-debian-10:v20.10.0
+FROM gocd/gocd-agent-debian-10:v21.2.0
 
 # Become root
 USER root
@@ -130,8 +130,8 @@ RUN set -eux; \
 
 ENV LANG C.UTF-8
 ENV RUBY_MAJOR 2.7
-ENV RUBY_VERSION 2.7.2
-ENV RUBY_DOWNLOAD_SHA256 1b95ab193cc8f5b5e59d2686cb3d5dcf1ddf2a86cb6950e0b4bdaae5040ec0d6
+ENV RUBY_VERSION 2.7.3
+ENV RUBY_DOWNLOAD_SHA256 5e91d1650857d43cd6852e05ac54683351e9c301811ee0bef43a67c4605e7db1
 
 # some of ruby's build scripts are written in ruby
 #   we purge system ruby later to make sure our final image uses what we just built
@@ -214,7 +214,7 @@ RUN mkdir -p "$GEM_HOME" && chmod 777 "$GEM_HOME"
 RUN groupadd --gid 1001 node \
   && useradd --uid 1001 --gid node --shell /bin/bash --create-home node
 
-ENV NODE_VERSION 15.5.0
+ENV NODE_VERSION 15.14.0
 
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && case "${dpkgArch##*-}" in \
@@ -231,7 +231,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && for key in \
     4ED778F539E3634C779C87C6D7062848A1AB005C \
     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
-    1C050899334244A8AF75E53792EF661D867B9DFA \
+    74F12602B6F1C4E913FAA37AD3A89613643B6201 \
     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1 \
     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600 \
     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8 \

@@ -17,7 +17,7 @@ version: "3.8"
 
 services:
   gocd-agent-ruby2.7:
-    image: smartassist/gocd-agent-ruby2.7:v20.10.0
+    image: smartassist/gocd-agent-ruby2.7:v21.2.0
     restart: unless-stopped
     env_file: .env
 ```
@@ -25,7 +25,7 @@ services:
 - To modify further, reference in your Dockerfile:
 
 ```dockerfile
-FROM smartassist/gocd-agent-ruby2.7:v20.10.0
+FROM smartassist/gocd-agent-ruby2.7:v21.2.0
 ```
 
 ## Contents
@@ -33,16 +33,16 @@ FROM smartassist/gocd-agent-ruby2.7:v20.10.0
 - [GoCD's official Debian 10 agent's Dockerfile](https://hub.docker.com/r/gocd/gocd-agent-debian-10)
 - [Docker's official Ruby 2.7 Dockerfile](https://github.com/docker-library/ruby/raw/master/2.7/buster/Dockerfile)
 - [Buildpack Dependencies](https://github.com/docker-library/buildpack-deps/raw/master/debian/buster/Dockerfile)
-- [Docker's official Node 15 Dockerfile](https://github.com/nodejs/docker-node/raw/master/15/buster/Dockerfile)
+- [Docker's official Node 15 Dockerfile](https://github.com/nodejs/docker-node/raw/main/15/buster/Dockerfile)
 
 ## Versions
 
 | Runtime    | Version |
 |------------|---------|
 | OS      | Debian 10 (Buster)  |
-| GoCD agent | v20.10.0 |
-| Ruby       | 2.7.2  |
-| Node       | 15.5.0  |
+| GoCD agent | v21.2.0 |
+| Ruby       | 2.7.3  |
+| Node       | 15.14.0  |
 
 ## Building
 
