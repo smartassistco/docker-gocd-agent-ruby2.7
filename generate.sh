@@ -2,7 +2,7 @@
 
 GOCD_AGENT_VERSION=21.2.0
 RUBY_VERSION=2.7
-NODE_VERSION=15
+NODE_VERSION=16
 
 echo "Creating temp directory"
 
