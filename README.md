@@ -42,7 +42,7 @@ FROM smartassist/gocd-agent-ruby2.7:v21.2.0
 | OS      | Debian 10 (Buster)  |
 | GoCD agent | v21.2.0 |
 | Ruby       | 2.7.3  |
-| Node       | 15.14.0  |
+| Node       | 16.1.0  |
 
 ## Building
 
