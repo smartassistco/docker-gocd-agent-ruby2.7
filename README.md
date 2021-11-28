@@ -2,8 +2,7 @@
 
 [![dockeri.co](https://dockeri.co/image/smartassist/gocd-agent-ruby2.7)](https://hub.docker.com/r/smartassist/gocd-agent-ruby2.7)
 
-[![Docker Hub Automated](https://img.shields.io/docker/cloud/automated/smartassist/gocd-agent-ruby2.7.svg?style=flat-square&logo=docker "GitHub issues")](https://hub.docker.com/r/smartassist/gocd-agent-ruby2.7)
-[![Docker Hub Build Status](https://img.shields.io/docker/cloud/build/smartassist/gocd-agent-ruby2.7.svg?style=flat-square&logo=docker "GitHub stars")](https://hub.docker.com/r/smartassist/gocd-agent-ruby2.7)
+[![Docker Build Status](https://github.com/smartassistco/docker-gocd-agent-ruby2.7/actions/workflows/docker-image.yml/badge.svg)](https://github.com/smartassistco/docker-gocd-agent-ruby2.7/actions/workflows/docker-image.yml)
 
 [GoCD Agent on Debian 10](https://hub.docker.com/r/gocd/gocd-agent-debian-10) with the latest version of Ruby 2.7 added to
 it.
